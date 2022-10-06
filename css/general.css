@@ -64,6 +64,11 @@ html {
   /*instead of fixing it with px we use % bc of accesability*/
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /*Doesn't work on Safari 
+  
+  scroll-behavior: smooth;
+  */
 }
 
 * {
