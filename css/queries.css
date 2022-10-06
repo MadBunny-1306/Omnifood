@@ -115,6 +115,7 @@
   /*** MOBILE NAVIGATION ***/
   .btn-mobile-nav {
     display: block;
+    z-index: 100;
   }
 
   .main-nav {
@@ -130,7 +131,7 @@
     justify-content: center;
     transition: all 0.5s ease-in;
 
-    background-color: blueviolet;
+    background-color: #fdf2e9;
 
     /**** Hide navigation ****/
 
