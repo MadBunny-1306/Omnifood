@@ -86,11 +86,19 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
+            <!-- ovo <picture> se pise zbog browsera koji mozda ne podrzavaju format slike koji zelimo da stavimo, pa moramo da ponudimo vise opcija i browser ce sam da odabere onu sliku koju moze da ucita. dole u <img> stavljamo src slike koju mislimo da podrzavaju svi browseri, u ovom slucaju .png-->
+            <picture>
+               <!-- prvo napisemo format koji bi bio idealan da koristimo, ovde hocemo da koristimo sliku koja ima format .webp -->
+              <source srcset="img/hero-img.webp" type="image/webp">
+              <!-- a ispod dodamo jos jedan source za fallback sliku -->
+              <source srcset="img/hero-img.png" type="image/png">
+              
+              <img
+              src="img/hero-img.png"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              class="hero-img"
-            />
+              class="hero-img"/>
+            </picture>
+            
           </div>
         </div>
       </section>
